@@ -53,84 +53,48 @@ def apply_milk_filter(image, layer, game, punt):
 				
 						if(game == 0):
 							if brightness <= 25:
-								result += chr(0)
-								result += chr(0)
-								result += chr(0)
+								result += chr(0) + chr(0) + chr(0)
 							if brightness > 25 and brightness <= 70:
 								if probably(puntilism / 100):
-									result += chr(0)
-									result += chr(0)
-									result += chr(0)
+									result += chr(0) + chr(0) + chr(0)
 								else:
-									result += chr(102)
-									result += chr(0)
-									result += chr(31)
+									result += chr(102) + chr(0) + chr(31)
 							if brightness > 70 and brightness < 120:
 								if probably(puntilism / 100):
-									result += chr(102)
-									result += chr(0)
-									result += chr(31)
+									result += chr(102) + chr(0) + chr(31)
 								else:
-									result += chr(0)
-									result += chr(0)
-									result += chr(0)
+									result += chr(0) + chr(0) + chr(0)
 							if brightness >= 120 and brightness < 200:
-								result += chr(102)
-								result += chr(0)
-								result += chr(31)
+								result += chr(102) + chr(0) + chr(31)
 							if brightness >= 200 and brightness < 230:
 								if probably(puntilism / 100):
-									result += chr(137)
-									result += chr(0)
-									result += chr(146)
+									result += chr(137) + chr(0) + chr(146)
 								else:
-									result += chr(102)
-									result += chr(0)
-									result += chr(31)
+									result += chr(102) + chr(0) + chr(31)
 							if brightness >= 230:
-								result += chr(137)
-								result += chr(0)
-								result += chr(146)
+								result += chr(137) + chr(0) + chr(146)
 						else:
 							if brightness <= 25:
-								result += chr(0)
-								result += chr(0)
-								result += chr(0)
+								result += chr(0) + chr(0) + chr(0)
 							if brightness > 25 and brightness <= 70:
 								if probably(punt/100):
-									result += chr(0)
-									result += chr(0)
-									result += chr(0)
+									result += chr(0) + chr(0) + chr(0)
 								else:
-									result += chr(92)
-									result += chr(36)
-									result += chr(60)
+									result += chr(92) + chr(36) + chr(60)
 							if brightness > 70 and brightness < 90:
 								if probably(punt/100):
-									result += chr(92)
-									result += chr(36)
-									result += chr(60)
+									result += chr(92) + chr(36) + chr(60)
 								else:
-									result += chr(0)
-									result += chr(0)
-									result += chr(0)
+									result += chr(0) + chr(0) + chr(0)
 							if brightness >= 90 and brightness < 150:
-								result += chr(92)
-								result += chr(36)
-								result += chr(60)
+								result += chr(92) + chr(36) + chr(60)
 							if brightness >= 150 and brightness < 200:
 								if probably(punt/100):
-									result += chr(203)
-									result += chr(43)
-									result += chr(43)
+									result += chr(203) + chr(43) + chr(43)
 								else:
-									result += chr(92)
-									result += chr(36)
-									result += chr(60)
+									result += chr(92) + chr(36) + chr(60)
 							if brightness >= 200:
-								result += chr(203)
-								result += chr(43)
-								result += chr(43)
+								result += chr(203) + chr(43) + chr(43)
 						
 						if(len(pixel) == 4):
 							result += pixel[3]
