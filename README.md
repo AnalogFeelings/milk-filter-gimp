@@ -21,7 +21,7 @@ This was a pain to write, as there was barely any documentation on GIMP's plugin
 Download [milk_filter.py](milk_filter.py) and place it in either of these directories:
 
 - `C:\Program Files\GIMP 2\share\gimp\2.0\scripts`
-- `C:\Users\cakea\AppData\Roaming\GIMP\2.10\scripts`
+- `C:\Users\YourUsername\AppData\Roaming\GIMP\2.10\scripts`
 
 And reboot GIMP. You should see the filter now appear under **Filters** -> **Artistic** -> **Milk Filter**.
 
