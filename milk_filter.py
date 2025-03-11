@@ -42,6 +42,7 @@ def apply_milk_filter(image, layer, game, punt):
 	# Create a temporary layer to save the results.
 	newLayer = gimp.Layer(image, layer.name + " temp", layer.width, layer.height, layer.type, layer.opacity, layer.mode)
 	image.add_layer(newLayer, position)
+	pdb.gimp_layer_set_offsets(newLayer, layer.offsets[0], layer.offsets[1])
 	layerName = layer.name
 	
 	# Clear the temp layer.
