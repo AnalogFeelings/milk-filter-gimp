@@ -1,4 +1,3 @@
 {
-	"python.defaultInterpreterPath": "C:/Python27/python.exe",
-	"python.envFile": "${workspaceFolder}/.vscode/.env"
+	"python.defaultInterpreterPath": "${env:GIMP_PYTHON}",
 }
