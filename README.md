@@ -12,7 +12,7 @@ Choose an image you like and turn it into something you'd see in the Milk inside
 This was a pain to write, as there was barely any documentation on GIMP's plugin interface and my IDE did not like the GIMP module file much.
 
 > [!IMPORTANT]
-> This plugin does not support GIMP 3, support for it may be added in the future.
+> This plugin does not support GIMP 3, support for it is work in progress.
 
 ## :eye: Showcase
 ![GIMP showcase](screenshots/gimp.gif)
